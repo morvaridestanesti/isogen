@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btGenerate"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_500"
+            android:text="Generate"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btParse"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_200"
+            android:text="Parse"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:cornerRadius="12dp" />
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="8dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="Card Number"
+            android:inputType="number"
+            android:text="1234567890123456"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_200"
+            android:textSize="16sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="8dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="Transaction Amount"
+            android:inputType="number"
+            android:text="50000"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_200"
+            android:textSize="16sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvIso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="8dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etIso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="ISO8583 Message"
+            android:inputType="textMultiLine"
+            android:text="@string/iso"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_200"
+            android:textSize="16sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="52dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Convert"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvIso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/adapter_recycler_iso" />
+</LinearLayout>

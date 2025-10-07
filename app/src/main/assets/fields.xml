@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE j8583-config PUBLIC "-//J8583//DTD CONFIG 1.0//EN"
+    "http://j8583.sourceforge.net/j8583.dtd">
+<j8583-config>
+    <!-- Financial Message -->
+    <parse type="0200">
+        <field
+            length="19"
+            num="2"
+            type="LLVAR" />
+        <field
+            length="6"
+            num="3"
+            type="NUMERIC" />
+        <field
+            length="12"
+            num="4"
+            type="AMOUNT" />
+        <field
+            length="12"
+            num="5"
+            type="AMOUNT" />
+        <field
+            length="12"
+            num="6"
+            type="AMOUNT" />
+        <field
+            length="10"
+            num="7"
+            type="DATE10" />
+        <field
+            length="8"
+            num="8"
+            type="NUMERIC" />
+        <field
+            length="8"
+            num="9"
+            type="NUMERIC" />
+        <field
+            length="6"
+            num="11"
+            type="NUMERIC" />
+        <field
+            length="6"
+            num="12"
+            type="TIME" />
+        <field
+            length="4"
+            num="13"
+            type="DATE4" />
+        <field
+            length="4"
+            num="14"
+            type="DATE_EXP" />
+        <field
+            length="4"
+            num="15"
+            type="DATE4" />
+        <field
+            length="4"
+            num="16"
+            type="DATE4" />
+        <field
+            length="4"
+            num="18"
+            type="NUMERIC" />
+        <field
+            length="3"
+            num="19"
+            type="NUMERIC" />
+        <field
+            length="3"
+            num="22"
+            type="NUMERIC" />
+        <field
+            length="3"
+            num="23"
+            type="NUMERIC" />
+        <field
+            length="2"
+            num="25"
+            type="NUMERIC" />
+        <field
+            length="2"
+            num="26"
+            type="NUMERIC" />
+        <field
+            length="1"
+            num="27"
+            type="NUMERIC" />
+        <field
+            length="9"
+            num="28"
+            type="ALPHA" />
+        <field
+            length="9"
+            num="29"
+            type="ALPHA" />
+        <field
+            length="9"
+            num="30"
+            type="ALPHA" />
+        <field
+            length="9"
+            num="31"
+            type="ALPHA" />
+        <field
+            length="11"
+            num="32"
+            type="LLVAR" />
+        <field
+            length="11"
+            num="33"
+            type="LLVAR" />
+        <field
+            length="37"
+            num="35"
+            type="LLVAR" />
+        <field
+            length="12"
+            num="37"
+            type="ALPHA" />
+        <field
+            length="3"
+            num="40"
+            type="NUMERIC" />
+        <field
+            length="8"
+            num="41"
+            type="ALPHA" />
+        <field
+            length="15"
+            num="42"
+            type="ALPHA" />
+        <field
+            length="40"
+            num="43"
+            type="ALPHA" />
+        <field
+            length="76"
+            num="45"
+            type="LLVAR" />
+        <field
+            length="3"
+            num="49"
+            type="NUMERIC" />
+        <field
+            length="3"
+            num="50"
+            type="NUMERIC" />
+        <field
+            length="3"
+            num="51"
+            type="NUMERIC" />
+        <field
+            length="64"
+            num="52"
+            type="BINARY" />
+        <field
+            length="64"
+            num="53"
+            type="BINARY" />
+        <field
+            length="120"
+            num="54"
+            type="LLLVAR" />
+        <field
+            length="999"
+            num="55"
+            type="LLLVAR" />
+        <field
+            length="4"
+            num="56"
+            type="LLLVAR" />
+        <field
+            length="3"
+            num="57"
+            type="LLLVAR" />
+        <field
+            length="255"
+            num="59"
+            type="LLLVAR" />
+        <field
+            length="999"
+            num="60"
+            type="LLLVAR" />
+        <field
+            length="2"
+            num="67"
+            type="NUMERIC" />
+        <field
+            length="3"
+            num="70"
+            type="NUMERIC" />
+        <field
+            length="42"
+            num="90"
+            type="NUMERIC" />
+        <field
+            length="25"
+            num="98"
+            type="ALPHA" />
+        <field
+            length="11"
+            num="100"
+            type="LLVAR" />
+        <field
+            length="28"
+            num="102"
+            type="LLVAR" />
+        <field
+            length="28"
+            num="103"
+            type="LLVAR" />
+        <field
+            length="999"
+            num="120"
+            type="LLLVAR" />
+        <field
+            length="15"
+            num="123"
+            type="LLLVAR" />
+        <field
+            length="999"
+            num="127"
+            type="LLLVAR" />
+        <field
+            length="16"
+            num="128"
+            type="BINARY" />
+    </parse>
+</j8583-config>
